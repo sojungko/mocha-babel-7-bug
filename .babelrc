@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "modules": "commonjs",
+          "debug": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "inline-react-svg",
+      {
+        "svgo": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "sourceMaps": "inline",
+      "plugins": [
+        "rewire"
+      ]
+    }
+  }
+}
